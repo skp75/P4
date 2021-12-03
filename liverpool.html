@@ -1,0 +1,196 @@
+<!-- DEVELOPER: Shrut Patel, IS117-101, Fall 2021 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liverpool</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="styles/liverpool.css" rel="stylesheet">
+
+</head>
+
+<img src="images/lfclogo.png" alt="index.html" align="left" width = "135" height = "78" >
+
+<h1><center><b>Liverpool<b></center></h1>
+
+<body>
+
+<div class="container-fluid">
+    <div class="topnav-centered">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"> <h2>Everything Soccer </h2></a>
+
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="liverpool.html">Liverpool</a>
+                                <a class="dropdown-item" href= "mancity.html">Man City</a>
+                                <a class="dropdown-item" href="chelsea.html">Chelsea</a>
+                                <a class="dropdown-item" href="manunited.html">Man United</a>
+                            </div>
+                        </li>                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="feat.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Featured
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="head.html">Head-on-head</a>
+                            </div>
+                        </li>  
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+      <div class="element">
+        <h3><center><u>Brief History</u></center></h3>
+        <p>Following the moving of Everton to Goodison Park in 1892, the club's then-president John Houlding suddenly found himself with the rights to Anfield stadium and no team to play on it. Always a practical man, Houlding quickly decided to circumvent this problem by forming his own club – Liverpool (should not be confused with Liverpool Ramblers AFC that was founded ten years earlier).
+        <br>
+        <br>
+        Though an immensely popular club even then, Liverpool FC were not particularly consistent in the post-WWII period. After claiming their fourth League title in 1947, the club entered a period of mediocrity which culminated with their relegation to Second Division in 1954. Things took a turn for the better after Bill Shankly was hired as manager, however; Shankly's first order of business was to release the entire first team squad. He then turned the club's storage room into the famous "Boot Room", a place that would serve as the coaches' secret meeting place for the next three decades.
+        </p>
+      </div>
+      <div class="elements">
+        <h3><center><u>Trophies</u></center></h3>
+        <p><u>Main trophies</u></p>
+            <ul>
+                <li>First Division/Premier League: 19</li>
+                <li>FA Cup: 7</li>
+                <li>League Cup: 8</li>
+                <li>European Cup/Champions League: 6</li>
+                <li>UEFA Cup: 3</li>
+            </ul>
+
+        <img src = "images/lfcstadium.jpg" alt = "Liverpool stadium" height = "150" width = "180" float = "left">
+        <p>Anfield Rd, Anfield, Liverpool L4 0TH, UK</p>
+      </div>
+                  
+<!--
+<div id="wrapperDiv">
+<div id="div1" style="padding:20px;background-color:#decddd;float:left">
+    <p>Following the moving of Everton to Goodison Park in 1892, the club's then-president John Houlding suddenly found himself with the rights to Anfield stadium and no team to play on it. Always a practical man, Houlding quickly decided to circumvent this problem by forming his own club – Liverpool (should not be confused with Liverpool Ramblers AFC that was founded ten years earlier).</p>
+</div>
+
+<div id="div2" style="padding:20px;background-color:#cedddd;float:left">Div tag 2</div>
+</div>
+-->
+
+<br>
+<br>
+
+
+<h1><center>Schedule</center></h1>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      December<br>
+      <span style="font-size:18px">2021</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+<br>
+<br>
+
+
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Shrut Patel, 2021 |  Terms Of Use  |</span>
+        </div>
+     </div>
+  </footer>
+
+</div>
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>

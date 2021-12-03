@@ -1,0 +1,256 @@
+<!-- DEVELOPER: Shrut Patel, IS117-101, Fall 2021 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Head-on-Head</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="#" rel="stylesheet">
+
+</head>
+
+<h1><center><b>Head-on-Head<b></center></h1>
+
+<body>
+
+<style>
+    body{
+        background:  #D6BABA;
+    }
+
+    h2 {
+  font-family: Chalkduster, fantasy ;
+    }
+
+    h1 {
+  color: #FFFCFC;
+  font-size: 60px;
+  font-family: 'Courier New', monospace;
+}
+
+.elements {
+  display: flex;
+}
+
+.item {
+  background: #A27E7E;
+  flex-basis: 400px;
+  height: 500px;
+  margin: 50px;
+}
+
+#div1,#div2,#div3 {
+display: none
+}
+
+    .footer {
+  color: #0D0808  ;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #E8DBDB;
+  text-align: center;
+  padding: 10px;
+    }
+
+</style>
+
+<script type="text/javascript">
+ 
+function showHide(elem) {
+    if(elem.selectedIndex != 0) {
+         //hide the divs
+         for(var i=0; i < divsO.length; i++) {
+             divsO[i].style.display = 'none';
+        }
+        //unhide the selected div
+        document.getElementById('div'+elem.value).style.display = 'block';
+    }
+}
+ 
+window.onload=function() {
+    //get the divs to show/hide
+    divsO = document.getElementById("forms").getElementsByTagName('div');
+}
+</script>
+
+<div class="container-fluid">
+    <div class="topnav-centered">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"> <h2>Everything Soccer </h2></a>
+
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teams
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="liverpool.html">Liverpool</a>
+                                <a class="dropdown-item" href= "mancity.html">Man City</a>
+                                <a class="dropdown-item" href="chelsea.html">Chelsea</a>
+                                <a class="dropdown-item" href="manunited.html">Man United</a>
+                            </div>
+                        </li>                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="feat.html" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Featured
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="head.html">Head-on-head</a>
+                            </div>
+                        </li>  
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+<br>
+<h3><center><u>Compare different stats and more!</u></center></h3>
+
+  <div class="elements">
+    <div class="item">
+        <br>
+        <br>
+        <form action="#" method="post" id="forms">
+         
+         <select name="options" onchange="showHide(this)">
+                <option value="">Pick a team</option>
+                <option value="1">Liverpool</option>
+                <option value="2">Chelsea</option>
+                <option value="3">Man City</option>
+         </select>
+         
+         <div id="div1">
+            <ul>
+                <li>First Division/Premier League: 19</li>
+                <li>FA Cup: 7</li>
+                <li>League Cup: 8</li>
+                <li>European Cup/Champions League: 5</li>
+                <li>UEFA Cup: 3</li>
+            </ul>           
+ 
+         </div>
+
+         <div id="div2">
+            <ul>
+                <li>First Division/Premier League: 6</li>
+                <li>FA Cup: 8</li>
+                <li>League Cup: 5</li>
+                <li>European Cup/Champions League: 2</li>
+                <li>UEFA Cup: 2</li>
+                <li>UEFA Europe League: 1</li>
+            </ul>             
+     
+         </div>
+
+         <div id="div3">
+                <li>First Division/Premier League: 6</li>
+                <li>FA Cup: 5</li>
+                <li>League Cup: 6</li>
+                <li>UEFA Cup Winners' Cup: 1</li>
+         </div>
+         
+    </form>
+
+    </div>
+
+    <div class="item">
+        <br>
+        <br>
+        <form action="#" method="post" id="forms">
+         
+         <select name="options" onchange="showHide(this)">
+                <option value="">Pick a team</option>
+                <option value="1">Liverpool</option>
+                <option value="2">Chelsea</option>
+                <option value="3">Man City</option>
+         </select>
+         
+         <div id="div1">
+            <ul>
+                <li>First Division/Premier League: 19</li>
+                <li>FA Cup: 7</li>
+                <li>League Cup: 8</li>
+                <li>European Cup/Champions League: 5</li>
+                <li>UEFA Cup: 3</li>
+            </ul>           
+ 
+         </div>
+         
+         <div id="div2">
+            <ul>
+                <li>First Division/Premier League: 6</li>
+                <li>FA Cup: 8</li>
+                <li>League Cup: 5</li>
+                <li>European Cup/Champions League: 2</li>
+                <li>UEFA Cup: 2</li>
+                <li>UEFA Europe League: 1</li>
+            </ul>             
+     
+         </div>
+
+         <div id="div3">
+                <li>First Division/Premier League: 6</li>
+                <li>FA Cup: 5</li>
+                <li>League Cup: 6</li>
+                <li>UEFA Cup Winners' Cup: 1</li>
+         </div>
+         
+    </form>
+
+    </div>
+  </div>
+
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Shrut Patel, 2021 |  Terms Of Use  |</span>
+        </div>
+     </div>
+  </footer>
+
+</div>
+
+
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>
